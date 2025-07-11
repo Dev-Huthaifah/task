@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+.tasks {
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.tasks input {
+  width: 70%;
+  height: max-content;
+  font-size: 2rem;
+  border: none;
+  padding: 5px;
+}
+.tasks button {
+  border: none;
+  border-radius: 5px;
+  background-color: #faf3f0;
+  color: #000;
+  display: inline-block;
+  height: 40px;
+  font-size: 2rem;
+  padding: 0 auto;
+  transition: .2s;
+}
+.tasks button:hover {
+  color: #faf3f0;
+  background-color: #000;
+}
+@media (max-width: 767px) {
+  .tasks input,
+  .tasks button {
+    font-size: 1.4rem;
+  }
+}
+ul {
+  background-clip: white;
+  width: 90%;
+  list-style: none;
+}
+ul li {
+  background-color: white;
+  padding: 20px;
+  font-size: 1.8rem;
+}
+li.done {
+  color: gray;
+  text-decoration: line-through;
+}
